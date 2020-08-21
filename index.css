@@ -247,10 +247,14 @@
 
 @media screen and (max-width:768px) {
   .business-name {
-    font-size:3rem;
+    font-size:2.5rem;
   }
   .products{
     height:90vh;
+  }
+
+  .products h2 {
+    font-size:2rem;
   }
   .product-img {
     display:grid;
@@ -317,7 +321,7 @@
   padding:6px;
   background-color: rgb(250, 193, 6);
   color:rgb(21, 33, 88);
-  width:400px;
+  width:350px;
   margin-right:10px;
   font-weight:bold;
   height:3rem;
@@ -571,7 +575,7 @@
     flex-direction:column;
     justify-content: space-around;
     align-items: center;
-    height:100vh;
+    height:110vh;
     width:100%;
     font-size:1.5rem;
     background:linear-gradient(rgb(133, 170, 133), rgb(167, 131, 131), rgb(133,170,133));
@@ -615,8 +619,8 @@
   display:block;
   bottom:0;
   right:0;
-  width:200px;
+  width:150px;
   border:none;
   color:black;
-  height:30px;
+  height:20px;
 }
