@@ -207,12 +207,13 @@
   width:100%;
   margin-top:0;
   position: relative;
-  height:80vh;
+  height:100vh;
   display:flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  background-color:rgb(197, 209, 197);
+  background:url("images/video-bg.jpg") no-repeat;
+  background-size:cover;
 }
 
 .products h2 {
@@ -220,7 +221,8 @@
   font-weight:bold;
   font-size:2.5rem;
   text-transform: uppercase;
-  color:rgb(5, 11, 92);
+  color:rgb(233, 44, 10);
+  z-index:999;
 }
 
 .product-img {
@@ -229,34 +231,53 @@
   align-items:center;
   height:80%;
   width:95%;
+  z-index:998;
 }
 .img-cont {
   width:20%;
-  height:30vw;
-  border-radius:50%;
+  height:22vw;
   display:flex;
-  flex-direction:column;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  background-color:white;
 }
 
 .img-cont figcaption{
   font-family:serif;
   font-size:1.5rem;
+  background-color:rgb(250, 193, 6);
+  display:block;
+  width:100%;
+  height:45px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.motto {
+  font-size:1.5rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 @media screen and (max-width:768px) {
   .business-name {
     font-size:2.5rem;
   }
+  .motto {
+    font-size:1.3rem;
+  }
   .products{
-    height:90vh;
+    height:100vh;
+    justify-content:space-around;
   }
 
   .products h2 {
-    font-size:2rem;
+    font-size:25px;
+    letter-spacing:5px;
   }
   .product-img {
+    height:90%;
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows:1fr 1fr;
@@ -275,18 +296,18 @@
   width:100%;
   height:auto;
   display:block;
-  border-radius:50%;
 }
 
 .bio {
   font-family:serif;
-  font-size:2.5rem;
+  font-size:2rem;
   text-transform:uppercase;
   font-weight:bold;
+  letter-spacing:5px;
 }
 
 .about {
-  height:80vh;
+  height:100vh;
   width:100%;
   background-color:rgb(245, 241, 241);
   display:flex;
@@ -297,7 +318,7 @@
 
 .about-sep {
   display: flex;
-  height:70%;
+  height:90%;
 }
 
 .right, .left {
@@ -318,10 +339,10 @@
 
 .arti-btn {
   border-radius:6px;
-  padding:6px;
+  padding:3px;
   background-color: rgb(250, 193, 6);
   color:rgb(21, 33, 88);
-  width:350px;
+  width:300px;
   margin-right:10px;
   font-weight:bold;
   height:3rem;
@@ -336,6 +357,10 @@
   width:60%;
 }
 
+.appear {
+  display:none;
+}
+
 @media screen and (max-width:1240px) {
   .rightImg-cont {
     width:70%;
@@ -343,10 +368,10 @@
   .disappear {
     display:none;
   }
-
   .appear {
     display:block;
   }
+
 }
 .right-img {
   display: block;
@@ -365,7 +390,7 @@
   
   .about-sep {
     flex-direction:column;
-    justify-content: space-between;
+    justify-content: space-around;
     height:80%;
   }
 
@@ -382,7 +407,8 @@
   }
 
   .arti {
-    font-weight:0.5rem;
+    font-size:1.1rem;
+    line-height:19px;
   }
 }
 
@@ -390,7 +416,7 @@
 .remark-cont {
   width:100%;
   height:90vh;
-  background-color:rgba(136, 133, 133, 0.5);
+  background-color:white;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -410,7 +436,8 @@
   width:1000px;
   height:70vh;
   display:flex;
-  background-color:white;
+  flex-direction:column;
+  background-color:rgba(185, 182, 182, 0.5);
   border-radius:5px;
   box-shadow:0px 10px 15px rgb(24, 23, 23);
 }
@@ -418,7 +445,7 @@
 .next, .prev {
   width:50px;
   height:50px;
-  background-color:white;
+  background-color:rgba(136, 133, 133, 0.5);
   display:flex;
   justify-content: center;
   align-items:center;
@@ -427,40 +454,42 @@
 }
 
 .image-cont {
+  align-self: center;
   display:flex;
-  flex-direction:column;
   align-items:center;
-  justify-content:space-around;
-  width:40%;
+  justify-content:flex-start;
+  width:80%;
+  height:30%;
 }
 
 .image {
-  width:70%;
-  height:80%;
+  width:8%;
+  height:50%;
   display:flex;
-  flex-direction:column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  background-color:rgb(250, 193, 6);
+  border:10px solid rgb(250, 193, 6);
 }
 
 .remarks-img {
   height:auto;
   width:100%;
   display:block;
-  border-radius:10px;
 }
 
 .name {
   display:flex;
   align-items: center;
   justify-content: center;
+  background-color:rgb(250, 193, 6);
 }
 
 .name-text {
   font-family:serif;
   font-size:1.3rem;
   font-weight:600;
-  color:green;
+  padding:3px;
 }
 
 .text-cont {
@@ -470,27 +499,32 @@
   justify-content: center;
   text-align:center;
   text-justify: center;
-  width:60%;
+  align-self:center;
+  width:90%;
+  padding:5px;
+  height:70%;
   font-size:1.5rem;
   font-family:serif;
 }
 
 @media screen and (max-width:768px) {
   .remark {
-    width:90%;
+    width:95%;
     height:50vh;
   }
 
   .remark-cont {
-    height:80vh;
+    height:100vh;
   }
-
-  .image-cont, .text-cont {
-    width:50%;
+  .image-cont{
+    width:95%;
+  }
+  .text-cont {
+    width:95%;
   }
 
   .image {
-    height:90%;
+    width:15%
   }
 }
 
