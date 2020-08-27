@@ -15,6 +15,7 @@
 .overlay {
   background-color: rgba(4, 9, 30, 0.7);
   height:100vh;
+  width:100%;
   position:absolute;
   top:0;
   bottom:0;
@@ -141,11 +142,20 @@
     cursor:pointer;
     background-color:rgb(250, 193, 6);
     padding:6px 6px;
+    position:relative;
+    right:20px;
   }
 
   .navbar-cont {
     background-color:transparent;
     justify-content: space-between;
+  }
+
+  .logo {
+    position:relative;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
   }
 }
 
@@ -338,7 +348,7 @@
   .lists {
     height:45%;
     padding-left:40px;
-    font-size:1.2rem;
+    font-size:1rem;
   }
 
   .cat-images {
@@ -367,6 +377,7 @@
 
 .motto {
   font-size:1.5rem;
+  text-transform:capitalize;
 }
 
 @media screen and (max-width:768px) {
@@ -510,7 +521,7 @@
   }
 
   .arti {
-    font-size:1.2rem;
+    font-size:1rem;
     line-height:1.5rem;
     width:95%;
   }

@@ -23,7 +23,7 @@ navSlide();
 
 
 let curImg =0;
-var captionText= ["I can't appreciate your kind gesture despite the fact that we haven't met. You are indeed a blessing. I have been looking for someone with a good heart and you have proven it", "Your class is the best catering online class I've joined.It has really helped me. My man loves his woman to have a basic knowledge of baking because he likes junks. No more buying nonsense junks. Thank you so much", "Thank you for all you do. Due to my work, I baerly have enough time for my phone, and so, I don't attend the class whenever it's going on, But I really locked myself in to take previews. it has been really educative. I'm going to be trying my own and sending them soon."];
+var captionText= ["I can't appreciate your kind gesture despite the fact that we haven't met. You are indeed a blessing. I have been looking for someone with a good heart and you have proven it", "Your class is the best catering online class I've joined.It has really helped me. My man loves his woman to have a basic knowledge of baking because he likes junks. No more buying nonsense junks. Thank you so much", "Thank you for all you do. Due to my work, I barely have enough time for my phone, and so, I don't attend the class whenever it's going on, But I really locked myself in to take previews. it has been really educative. I'm going to be trying my own and sending them soon."];
 let name = ["OluwaYemisi", "OluwaBukunmi", "OluwaShikemi"];
 
 document.querySelector(".innerText").innerHTML=captionText[0];
@@ -74,6 +74,6 @@ function autoSlide () {
     document.querySelector(".innerText").textContent=captionText[curImg];
     document.querySelector(".name-text").textContent=name[curImg];
 
-  }, 5000);
+  }, 7000);
 };
 autoSlide();
