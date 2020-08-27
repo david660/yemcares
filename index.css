@@ -3,6 +3,7 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 #banner {
@@ -15,7 +16,7 @@
 
 .overlay {
   background-color: rgba(4, 9, 30, 0.7);
-  height:100vh;
+  height:100%;
   width:100%;
   position:absolute;
   top:0;
