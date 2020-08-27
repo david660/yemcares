@@ -9,13 +9,14 @@
   background:url("images/banner-bg.jpg") no-repeat;
   background-attachment: fixed;
   height:100vh;
+  width:100vw;
   background-size:cover;
 }
 
 .overlay {
   background-color: rgba(4, 9, 30, 0.7);
   height:100vh;
-  width:100vh;
+  width:100%;
   position:absolute;
   top:0;
   bottom:0;
