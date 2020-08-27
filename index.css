@@ -3,20 +3,19 @@
   margin:0;
   padding:0;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 #banner {
   background:url("images/banner-bg.jpg") no-repeat;
   background-attachment: fixed;
   height:100vh;
-  width:100vw;
+  width:100%;
   background-size:cover;
 }
 
 .overlay {
   background-color: rgba(4, 9, 30, 0.7);
-  height:100%;
+  height:100vh;
   width:100%;
   position:absolute;
   top:0;
