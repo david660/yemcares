@@ -1,3 +1,6 @@
+body {
+  background:radial-gradient(yellow, green);
+}
 
 *{
   margin:0;
@@ -60,6 +63,7 @@
 }
 .navbar {
   display:flex;
+  height:80%;
   width:30vw;
   align-items:center;
   justify-content: space-between;
@@ -69,7 +73,17 @@
 .nav-link {
   text-decoration:none;
   color:rgba(4, 99, 8, 0.849);
-  font-size:1.3rem;
+  font-size:1.2rem;
+  height:100%;
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.nav-link:hover {
+  background-color: #fac106;
+  border-radius:3px;
 }
 
 .burger {
@@ -84,6 +98,13 @@
   transition:all 0.3s ease;
 }
 
+.navbar li{
+  display:block;
+  width:100%;
+  height:100%;
+  text-align:center;
+}
+
 .line2{
   width:20px;
   height:3px;
@@ -95,7 +116,7 @@
 
 @media screen and (max-width:1024px){
   .nav-link{
-    width:40%;
+    width:100%;
   }
   .navbar-cont{
     width:100%;
@@ -123,24 +144,29 @@
     margin-block-end: 0px;
     transform:translateX(100%);
     transition: transform 0.5s ease-in;
+    z-index:999;
   }
   .navbar li {
     opacity:0;
-    margin-top:40px;
     border-bottom:1px solid #fff;
     width:100%;
+    height:50px;
     text-align:center;
-    text-justify:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
   }
   .nav-link {
     color:#023f05f1;
     font-size:1.3rem;
     font-weight: 600;
+    text-align:center;
+    height:100%;
   }
   .burger{
     display:block;
     cursor:pointer;
-    background-color:rgb(250, 193, 6);
+    background-color:#fac106;
     padding:6px 6px;
     position:relative;
     right:20px;
@@ -153,9 +179,8 @@
 
   .logo {
     position:relative;
-    left:50%;
-    top:50%;
-    transform: translate(-50%, -50%);
+    left:30px;
+    width:8vh;
   }
 }
 
@@ -185,7 +210,7 @@
 }
 
 .intro {
-  height:85vh;
+  height:100vh;
   width:100%;
   display:flex;
   flex-direction:column;
@@ -224,15 +249,15 @@
 }
 
 .products {
-  width:100%;
+  width:95%;
   margin-top:0;
   position: relative;
-  height:100vh;
   display:flex;
   flex-direction:column;
   justify-content: center;
   align-items: center;
   background-color:#fff;
+  margin:30px auto;
 }
 
 .category {
@@ -278,6 +303,8 @@
 
 .cat-fig:hover {
   transform: scale(1.05);
+  border:10px solid #fac106;
+  border-radius:6px;
 }
 
 .cat-fig1 {
@@ -348,15 +375,15 @@
   .lists {
     height:45%;
     padding-left:40px;
-    font-size:1rem;
+    font-size:1.2rem;
   }
 
   .cat-images {
     margin:0 auto;
     display:grid;
     padding:10px;
-    grid-template-columns: repeat(9, 25px);
-    grid-template-rows:repeat(9, 25px);
+    grid-template-columns: repeat(9, 30px);
+    grid-template-rows:repeat(9, 30px);
     grid-gap:10px;
     height:60%;
     align-items:space-around;
@@ -411,13 +438,13 @@
 }
 
 .about {
-  height:100vh;
-  width:100%;
+  width:95%;
   background-color:#fff;
   display:flex;
   flex-direction: column;
   align-items:center;
   justify-content: space-around;
+  margin:10px auto;
 }
 
 .about-sep {
@@ -487,7 +514,6 @@
 
 @media screen and (max-width:768px) {
   .about {
-    height:100vh;
     justify-content: center;
   }
 
@@ -521,8 +547,8 @@
   }
 
   .arti {
-    font-size:1rem;
-    line-height:1.5rem;
+    font-size:1.2rem;
+    line-height:1.7rem;
     width:95%;
   }
   .arti-btn {
@@ -532,19 +558,19 @@
 
 
 .remark-cont {
-  width:100%;
-  height:90vh;
+  width:95%;
   background-color:#fff;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction:column;
   transition:2s ease-in;
+  margin:10px auto;
 }
 
 .remark-lower {
   width:100%;
-  height:70vh;
+  height:600px;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -552,7 +578,7 @@
 
 .remark {
   width:1000px;
-  height:70vh;
+  height:500px;
   display:flex;
   flex-direction:column;
   background-color:rgba(185, 182, 182, 0.5);
@@ -656,7 +682,6 @@
 }
 
 .footer {
-  background-color:rgb(62, 46, 68);
   height:25vh;
   display:flex;
   color:#fff;
@@ -723,6 +748,13 @@
   color:#023f05f1;
   margin-right:10px;
   font-weight:bold;
+  text-transform:capitalize;
+}
+
+.btn:hover {
+  background-color:#023f05f1;
+  color:rgb(250, 193, 6);
+  transform:scale(1.1);
 }
 
 .form-input {
@@ -784,10 +816,10 @@
   display:block;
   bottom:100px;
   right:80px;
-  width:100px;
+  width:80px;
   border:none;
   color:#023f05f1;
-  height:100px;
+  height:80px;
   border-radius:50%;
   font-size:3rem;
   background-color:#fac106;

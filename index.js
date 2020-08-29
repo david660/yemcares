@@ -77,3 +77,13 @@ function autoSlide () {
   }, 7000);
 };
 autoSlide();
+
+function openNewTab(url) {
+  let win=window.location.replace(url);
+  win.focus;
+}
+let newLink=document.querySelector(".arti-btn");
+newLink.addEventListener("click", ()=>{
+  openNewTab("recipee.html");
+});
+
