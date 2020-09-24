@@ -4,6 +4,7 @@ const navSlide=()=>{
   const navbar=document.querySelectorAll(".nav-list");
 
   burger.addEventListener("click", ()=>{
+    nav.classList.toggle("displayer");
     nav.classList.toggle("nav-active");
 
     navbar.forEach((link, index)=>{
@@ -30,10 +31,10 @@ document.querySelector(".innerText").innerHTML=captionText[0];
 document.querySelector(".name-text").innerHTML=name[0];
 document.querySelector(".prev").addEventListener("click", ()=> {
   processPrevious();
-})
+});
 document.querySelector(".next").addEventListener("click", ()=>{
   processNext();
-})
+});
 
 function processPrevious() {
   newSlide(-1);

@@ -35,22 +35,15 @@ body {
   width:100%;
 }
 
-.banner-contact {
-  display:flex;
-  justify-content: space-between;
-  height:5vh;
-  color:white;
-  width:95%;
-}
 
 .navbar-cont {
-  width:950px;
+  width:100%;
   height:10vh;
   display:flex;
   justify-content: space-around;
   align-items:center;
-  position:sticky;
-  background-color:white;
+  position:fixed;
+  background-color:rgba(236, 234, 234, 0.9);
 }
 .logo {
   height:100%;
@@ -127,6 +120,7 @@ body {
 
   body{
     overflow-x: hidden;
+    font-family:'Roboto', sans-serif;
   }
   
   .navbar{
@@ -173,7 +167,7 @@ body {
   }
 
   .navbar-cont {
-    background-color:transparent;
+    background-color:rgba(236, 234, 234, 0.9);
     justify-content: space-between;
   }
 
@@ -210,7 +204,7 @@ body {
 }
 
 .intro {
-  height:100vh;
+  height:90vh;
   width:100%;
   display:flex;
   flex-direction:column;
@@ -234,12 +228,13 @@ body {
 }
 
 .intro-content{
-  width:95%;
-  height:70%;
+  width:50%;
+  height:60%;
   display:flex;
   flex-direction:column;
   justify-content: space-around;
   align-items: center;
+  border:5px solid #fff;
 }
 
 .business-name {
@@ -251,7 +246,6 @@ body {
 .products {
   width:95%;
   margin-top:0;
-  position: relative;
   display:flex;
   flex-direction:column;
   justify-content: center;
@@ -266,10 +260,10 @@ body {
   height:90%;
   align-items: center;
   justify-content: center;
+  margin-bottom:20px;
 }
 
 .lists {
-  position:relative;
   width:50%;
   padding-left:150px;
   display:flex;
@@ -303,7 +297,7 @@ body {
 
 .cat-fig:hover {
   transform: scale(1.05);
-  border:10px solid #fac106;
+  border:3px solid #fac106;
   border-radius:6px;
 }
 
@@ -376,10 +370,11 @@ body {
     height:45%;
     padding-left:40px;
     font-size:1.2rem;
+    margin-top:20px;
   }
 
   .cat-images {
-    margin:0 auto;
+    margin:20px auto;
     display:grid;
     padding:10px;
     grid-template-columns: repeat(9, 30px);
@@ -397,6 +392,7 @@ body {
     font-size:1.8rem;
     text-align:center;
     padding-top:0;
+    margin-top:20px;
   }
 }
 
@@ -418,6 +414,9 @@ body {
   .overlay-product{
     height:80vh;
     width:100%;
+  }
+  .intro-content{
+    width:90%;
   }
 }
 
@@ -450,6 +449,7 @@ body {
 .about-sep {
   display: flex;
   height:90%;
+  margin-bottom:20px;
 }
 
 .right, .left {
@@ -520,11 +520,13 @@ body {
   .bio {
     line-height:50px;
     height:60px;
+    margin-top:20px;
   }
 
   .rightImg-cont {
     width:60%;
-    padding-bottom:20px;
+    margin-bottom:20px;
+    margin-top:20px;
   }
   
   .about-sep {
@@ -592,6 +594,7 @@ body {
   text-align:center;
   padding-bottom:15px;
   color:#023f05f1;
+  margin-top:20px;
 }
 
 .next, .prev {
@@ -814,12 +817,12 @@ body {
 .return {
   position:fixed;
   display:block;
-  bottom:100px;
+  bottom:80px;
   right:80px;
-  width:80px;
+  width:60px;
   border:none;
   color:#023f05f1;
-  height:80px;
+  height:60px;
   border-radius:50%;
   font-size:3rem;
   background-color:#fac106;
@@ -834,5 +837,77 @@ body {
     left:20px;
     bottom:20px;
     font-size:1.5rem;
+  }
+}
+
+.meet-me {
+  width:95%;
+  background-color:#fff;
+  margin: 30px auto;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:space-around;
+  padding:20px;
+}
+
+.lower-cont {
+  display:flex;
+}
+.chef-cont {
+  width:40%;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.about-chef {
+  width:60%;
+  text-align:justify;
+  padding:20px;
+  font-size:1.3rem;
+  line-height:2rem;
+}
+
+.chef-img {
+  width:70%;
+}
+
+.chef-img figure {
+  width:100%;
+}
+
+.chef-me {
+  width:100%;
+  height:auto;
+  display:block;
+  border-left:20px solid #fac106;
+  border-bottom:20px solid #fac106;
+  border-radius:3px;
+  position:relative;
+}
+
+.chef-me::after {
+  content:'';
+  height:50px;
+  width:20px;
+  background:green;
+  position:absolute;
+  bottom:-4px;
+}
+
+figcaption {
+  font-size:1.3rem;
+  text-align:center;
+}
+
+@media screen and (max-width:768px) {
+  .lower-cont {
+    flex-direction:column;
+    margin-top:20px;
+  }
+
+  .chef-cont, .about-chef {
+    width:100%;
   }
 }
