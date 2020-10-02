@@ -88,3 +88,13 @@ newLink.addEventListener("click", ()=>{
   openNewTab("recipee.html");
 });
 
+let introBtn = document.querySelector(".intro-btn")
+  .addEventListener("click", ()=>{
+    openNewTab("contact.html");
+  });
+
+let artiBtn = document.querySelector("arti-btn")
+  .addEventListener("click", ()=>{
+    openNewTab("recipee.html");
+  })
+

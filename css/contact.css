@@ -5,14 +5,14 @@
   width:100%;
   justify-content: center;
   align-items: center;
-  backdrop-filter: blur(5px);
+  backdrop-filter: blur(15px);
   font-size:50px;
-  color:#114202;
+  color:#013b0b;
   font-weight:600;
 }
 
 .ban-img {
-  background:url("images/b3.jpg") no-repeat;
+  background:url("../images/logo.jpg") no-repeat;
   background-size:cover;
   height:220px;
   width:100%;
@@ -25,7 +25,7 @@
   display:flex;
   justify-content: center;
   align-items:center;
-  height:60vh;
+  height:65vh;
   width: 100%
 }
 .banner-contact {
@@ -59,11 +59,18 @@
 
 .contact-inp {
   border:none;
-  border-bottom:1px solid #cecece;
   width:100%;
   background:none;
-  height:100%;
   padding-top:20px;
+  height:100%;
+  padding-left: 15px;
+}
+
+.contact-inp::placeholder {
+  font-weight:lighter;
+  font-size:12px;
+  color:#a5a2a2;
+  font-weight:lighter;
 }
 
 .input-item {
@@ -71,15 +78,35 @@
   position: relative;
   margin-bottom:10px;
   width:100%;
+  border:1px solid #000;
+  border-radius:6px;
+}
+
+.underline {
+  border:none;
+  border-bottom:1px solid #000;
+  border-radius:0;
+}
+
+.message {
+  padding:5px;
+  border-color: #000;
+  border-radius: 6px;
+}
+
+.message:focus{
+  outline: none;
 }
 
 
-.input-item label {
+.labels {
   height:100%;
   pointer-events: none;
   position:absolute;
-  top:0px;
-  left:0px;
+  top:30%;
+  left:5px;
+  font-size:16px;
+  transition:all 0.3s ease;
 }
 
 .contact-inp:focus {
@@ -159,11 +186,11 @@ form {
   form {
     width:100%;
   }
-  .input-item label {
-    font-size:15px;
+  .labels {
+    font-size:16px;
   }
   input {
-    font-size:22px;
+    font-size:16px;
   }
 
   .recipe-footer {
@@ -179,12 +206,17 @@ form {
     flex-direction:column;
     width:50%;
     align-items: space-around;
-    height:200px;
+    height:auto;
     justify-content: flex-start;
     height:auto;
     margin-bottom:20px;
     margin-top:20px;
   }
+}
+
+.labels-edit {
+  top:0px;
+  font-size:11px;
 }
 
 

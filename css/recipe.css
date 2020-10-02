@@ -1,5 +1,5 @@
 body {
-  background:radial-gradient(yellow, green);
+  background:radial-gradient(rgb(252, 252, 127), yellow,rgb(164, 248, 164), green);
 }
 
 .recipe-list {
@@ -80,7 +80,7 @@ body {
   }
 
   .col {
-    color:rgb(2, 48, 2);
+    color:#023f05f1;
   }
 
   .banner-contact {
