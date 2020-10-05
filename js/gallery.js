@@ -2,7 +2,7 @@ let container=document.querySelector(".gal-container");
 let number=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17];
 let caption=[
   "Red Flower", "White Nuptial", "Blue Chocolate", "Pink Chocolate", 
-  "Noreos Cake", "Soccer", "Plain Beauty", "leaf in Sky", "Blue Chocolate", "Royalty Pink", "Wedding Baggage", "Yellow Love", "Blue Chocky", "Blue Rose", "Buttered Pink", "Fashionista", "Plain Round", "Pink Micky"
+  "Noreos Cake", "Soccer", "Plain Beauty", "leaf in Sky", "Blue Chocolate", "Royalty Pink", "Wedding Baggage", "Yellow Love", "Blue Chocky", "Blue Rose", "Buttered Pink", "Fashionista", "Banquet", "Pink Micky"
 ]
 
 for (let i=0;i<number.length;i++) {
